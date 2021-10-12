@@ -215,6 +215,7 @@ class SoftlearningEnv(Serializable, metaclass=ABCMeta):
         TODO(hartikainen): These logs don't make much sense right now. Need to
         figure out better format for logging general env infos.
         """
+        return {}
         keys = list(paths[0].get('infos', [{}])[0].keys())
 
         results = defaultdict(list)
